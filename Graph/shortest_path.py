@@ -17,6 +17,7 @@ def shortest_path(graph: List[List[int]], a: int, b: int) -> int:
                 if node == target:
                     return level
                 for node in get_neighbors(node):
+                    print("Neighbour Node : " , node)
                     if node in visited:
                         continue
                     queue.append(node)
